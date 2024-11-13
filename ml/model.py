@@ -1,6 +1,6 @@
 import pickle
 from sklearn.metrics import fbeta_score, precision_score, recall_score
-from data import process_data
+from ml.data import process_data
 # TODO: add necessary import
 from sklearn.ensemble import RandomForestClassifier
 
@@ -23,7 +23,7 @@ def train_model(X_train, y_train):
    # TODO: implement the function
     rfmodel = RandomForestClassifier()
     rfmodel.fit(X_train, y_train)
-    return model
+    return rfmodel
 
 
 def compute_model_metrics(y, preds):
