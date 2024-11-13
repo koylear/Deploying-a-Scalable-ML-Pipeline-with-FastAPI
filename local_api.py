@@ -9,6 +9,7 @@ print('Status Code:', r_get.status_code)
 # TODO: print the welcome message
 print('Result:', r_get.json())
 
+
 data = {
     "age": 37,
     "workclass": "Private",
@@ -29,7 +30,10 @@ data = {
 # TODO: send a POST using the data above
 r_post = requests.post('http://127.0.0.1:8000/data', data = json.dumps(data))
 
+
 # TODO: print the status code
 print('Status Code:',r_post.status_code)
 # TODO: print the result
 print('Result:',r_post.json())
+
+#final code changes
