@@ -4,6 +4,7 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from ml.model import train_model
+from train_model import train, test, data, X_train, y_train
 from sklearn.ensemble import RandomForestClassifier
 
 # TODO: implement the first test. Change the function name and input as needed
@@ -40,4 +41,4 @@ def test_rf_model(): #test_three():
     Ensure ccorrect algorithm is being used
     """
     rfmodel = train_model(X_train, y_train)
-    assert type(rf_model) == type(RandomForestClassifier())
+    assert type(rfmodel) == type(RandomForestClassifier())
